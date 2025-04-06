@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Clubs() {
+export default function Search() {
   return (
     <div>
-    club section  
+      fdf
     </div>
   )
 }

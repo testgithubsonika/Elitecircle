@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Clubs() {
+export default function Home() {
   return (
     <div>
-    club section  
+     home 
     </div>
   )
 }

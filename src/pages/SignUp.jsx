@@ -1,9 +1,10 @@
+
 import React from 'react'
 
-export default function Clubs() {
+export default function SignUp() {
   return (
     <div>
-    club section  
+      gukfhdkjfd
     </div>
   )
 }
