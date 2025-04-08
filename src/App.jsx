@@ -1,30 +1,26 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// src/App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import SignIn from './pages/SignIn';
+import Login from './pages/Login';
+import Signup from './pages/SignUp';
+import ForgotPassword from './pages/ForgotPassword';
+import Events from './pages/Events';
 import Dashboard from './pages/Dashboard';
-import SignUp from './pages/SignUp';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Search from './pages/Search';
-import Clubs from './pages/Clubs';
 
-export default function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-
-      <Header />
+    <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/search' element={<Search />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/clubs' element={<Clubs />} />
-
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
-      <Footer />
-    </BrowserRouter>
+    </Router>
   );
-}
+};
+
+export default App;

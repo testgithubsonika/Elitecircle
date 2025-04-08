@@ -22,8 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< HEAD
 .env
 .ps1
-=======
->>>>>>> 2524c9dcebf8e0e770375bee16f929cd6285740b
